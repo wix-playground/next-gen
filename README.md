@@ -1,4 +1,4 @@
-# mulicloud/miliservice infra from scratch
+# Multicloud and multiservice] infrastructure
 
 ## Why
 
