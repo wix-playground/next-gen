@@ -1,10 +1,10 @@
 # No Chef
+
 Right now we are using chef-server as part of infrastructure and service proviosioning.
 We have a lot of legacy code as from wix and from community.
 
-
-
 ## Disadvantages
+
 * unclear dependencies between cookbooks
 * and old bad practice to use community cookbooks with just copy them into wix-cookbooks tree
 * no clear splitting between prod/dev environments (because we have multiple environments)
@@ -13,6 +13,7 @@ We have a lot of legacy code as from wix and from community.
 * speed of deployment (especialy on remote sites)
 
 ## Current state and main functions
+
 * user management
 * package management (actually, only for initial install and very rare updates)
 * wix-service deployment
@@ -27,7 +28,9 @@ We have a lot of legacy code as from wix and from community.
 * Instance bootstrap/image creation
 
 ## Proposed solution
+
 ### k8s
+
 * user-management: not required in most cases (no users on nodes). If required - LDAP is better solution (we already have ssh public keys somewhere in self password management)
 * package management: not required. All images are pre-built with correct set of packages. If new version is required - new image shall be provided.
 * wix-services: all deployment is working

@@ -1,7 +1,5 @@
 # Provisioning
 
-
-
 ## Common
 
 ## Infrastructure
