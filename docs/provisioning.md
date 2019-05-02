@@ -11,6 +11,7 @@ Provisioning in our case has two big meanings:
    1. Network part (VPC, subnets, connectivity)
    1. Security (Firewalls/security-groups/ACLs)
    1. Instances and other objects (instances, instance groups, load balancers)
+1. @WIgor I think, we need more grannular release process. Test bed should grow to something like blue-green deployment with fast switch between versions. With deploy only to one DC initially. May be A/B DCs - A for stable environment, B - for "possible beta releases".
 
 ## Infrastructure
 
