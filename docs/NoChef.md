@@ -38,6 +38,7 @@ We have a lot of legacy code as from wix and from community.
   * dns: moving to public zones will allow us to not use internal dns with custom rules (just caching). Even more. We don't need our internal dns servers
   * dispatcher/routers: build/test packages with config files for all required dc/type. This will allow us to test and fast roll-back.
   * zookeeper: switch to native etcd in k8s
+    * @Wigor I suggest move data from ZK to usual MySQL with replication. It will make everything much faster. After moving to kube there will be only artifacts metadata, no servers at all.
   * elasticsearch: move inside k8s. Probably, designated cluster
 * DB: we also can move DB into k8s with persistent nodes/disks. This will allow us to manage access easily with network policies
 * PCI: ~~
