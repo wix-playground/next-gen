@@ -32,11 +32,13 @@ With correct definition of object we will be abble to define test conditions (he
 
 ## DataBases
 
-We need geo-sharding for databses. And be able to split databses per domain.
+see [databases document](./Databases.md)
 
-According to BI data we can understand which location is preferred for particular domain and place corresponding databses in this location. Also we shall be able to move that shard to different location.
+According to BI data we can understand which location is preferred for particular domain and place corresponding databses in this location. Also we shall be able to move that shard to different location.  
+(Jony C: I think this could be valuable info when we shard data with R&D)
 
-Probably, with good content cache policy we can awoid this.
+Probably, with good content cache policy we can awoid this.  
+(Jony C: not likely for many reasons)
 
 ## WIX-Service
 
